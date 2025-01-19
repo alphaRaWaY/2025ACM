@@ -1,0 +1,8 @@
+      
+0x01 P1226 快速幂模板       https://www.luogu.com.cn/problem/P1226
+0x02 P3383 线性筛模板       https://www.luogu.com.cn/problem/P3383
+0x03 P3811 乘法逆元模板     https://www.luogu.com.cn/problem/P3811
+0x04 P3390 矩阵快速幂模板   https://www.luogu.com.cn/problem/P3390
+0x05 P2197 博弈论模板       https://www.luogu.com.cn/problem/P2197
+0x06 P5656 exgcd模板        https://www.luogu.com.cn/problem/P5656
+0x07 P3807 Lucas模板        https://www.luogu.com.cn/problem/P3807
