@@ -1,4 +1,4 @@
-//查询不保证左端点小于右断电！！！！！
+//查询不保证左端点小于右端点！！！！！
 
 #include<bits/stdc++.h>
 using namespace std;
