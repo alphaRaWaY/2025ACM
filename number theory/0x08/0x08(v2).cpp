@@ -1,4 +1,5 @@
 //更改对对角线0的处理
+//求逆矩阵
 #include<bits/stdc++.h>
 using namespace std;
 #define int long long
@@ -124,11 +125,12 @@ void solve()
 }
 signed main()
 {
-    ios::sync_with_stdio(false);
+    // ios::sync_with_stdio(false);
     int _;
     // cin>>_;
     _=1;
     while(_--)solve();
+    system("pause");
 }
 /*
 3

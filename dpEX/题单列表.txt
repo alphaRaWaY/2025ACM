@@ -1,0 +1,4 @@
+0x01 https://www.luogu.com.cn/problem/P1006
+0x02 https://www.luogu.com.cn/problem/P1006
+0x03 https://www.luogu.com.cn/problem/P1063
+0x04 https://www.luogu.com.cn/problem/P1941
