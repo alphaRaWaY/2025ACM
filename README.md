@@ -23,3 +23,7 @@
 - [线性基](https://www.luogu.com.cn/training/541234)
 - [DP](https://www.luogu.com.cn/training/541232)
 - [连通分量](https://www.luogu.com.cn/training/541231)
+
+## 非常好的矩阵树博客
+
+[矩阵树定理 学习笔记 - Dark_Romance - 博客园](https://www.cnblogs.com/Dark-Romance/p/13276282.html)
