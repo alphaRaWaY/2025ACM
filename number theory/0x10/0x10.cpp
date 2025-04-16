@@ -58,9 +58,10 @@ signed main()
 {
     ios::sync_with_stdio(false);
     int _;
-    // cin>>_;
     _=1;
+    cin>>_;
     while(_--)solve();
+    system("pause");
 }
 /*
 3
