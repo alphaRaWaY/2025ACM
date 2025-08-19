@@ -1,0 +1,61 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define int long long
+#define endl '\n'
+#define inc(i,a,b) for(int i(a);i<=b;i++)
+#define dec(i,a,b) for(int i(a);i>=b;i--)
+
+#define LOCAL
+#ifdef LOCAL
+#define debug0(x) cout<<"[DEBUG] "<<#x<<"="<<x<<endl
+#define debug1(c,l,r) cout<<"[DEBUG] "<<#c<<" : ";\
+inc(i,l,r)cout<<c[i]<<" ";cout<<endl
+#define debug2(c,l,r,ll,rr)cout<<"[DEBUG]"<<#c<<endl;\
+inc(i,l,ll){inc(j,r,rr)cout<<c[i][j]<<" ";cout<<endl;}
+ostream& operator<< (ostream& o,const pair<int,int>& a)
+{
+    o<<"{"<<a.first<<","<<a.second<<"}";
+    return o;
+}
+#else
+#define debug0(x)
+#define debug1(c,l,r)
+#define debug2(c,l,r,ll,rr)
+#endif
+const int MaxN(405);
+int n,m;
+int nums[MaxN],dp[MaxN][2];
+int check(int m1,int m2)
+{
+    return 0;
+}
+void solve()
+{
+    cin>>n>>m;
+    inc(i,1,n)cin>>nums[i];
+    if(m==1)
+    {
+        int ans(0);
+        inc(i,2,n)
+        {
+            ans+=max(0ll,nums[i]-nums[i-1]);
+        }
+        ans+=nums[n];
+        cout<<ans<<endl;
+    }
+    else
+    {
+        int ans(0);
+        inc(i,1,n)
+        inc(j,i+1,n)ans=max(check(i,j),ans);
+        cout<<ans<<endl;
+    }
+}
+signed main()
+{
+    ios::sync_with_stdio(false);
+    int _;
+    _=1;
+    cin>>_;
+    while(_--)solve();
+}
