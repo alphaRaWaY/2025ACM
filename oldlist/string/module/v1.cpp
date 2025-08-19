@@ -36,6 +36,7 @@ namespace stringUtil{
     {
         vector<int> ans;
         getNxt(s2);
+        // inc(i,0,s2.size()-1)cout<<nxt[i]<<" ";cout<<endl;
         int j(-1);
         inc(i,0,s1.size()-1)
         {
@@ -59,6 +60,7 @@ namespace stringUtil{
     int kmp_check(string s1,string s2)
     {
         getNxt(s2);
+        // inc(i,0,s2.size()-1)cout<<nxt[i]<<" ";cout<<endl;
         int j(-1);
         inc(i,0,s1.size()-1)
         {
@@ -70,43 +72,14 @@ namespace stringUtil{
     }
 
 };
-using namespace stringUtil;
 
 void solve()
 {
-    vector<int> nxt1,nxt2;
-    string s;
-    cin>>s;
-    // 特判
-    if(s.size()<3)
-    {
-        cout<<"Just a legend"<<endl;
-        return;
-    }
-    // 通过翻转求前后缀nxt
-    getNxt(s);
-    nxt1=nxt;
-    reverse(s.begin(),s.end());
-    getNxt(s);
-    nxt2.resize(nxt.size());
-    inc(i,0,nxt2.size()-1)nxt2[i]=nxt[nxt2.size()-1-i];
-    reverse(s.begin(),s.end());
-    // 在中间寻找即为前缀又为后缀的串
-    int pos(0),len(0);
-    inc(i,1,s.size()-2)
-    {
-        if(nxt1[i]==-1)continue;
-        if(
-            nxt2[i-nxt1[i]]==nxt1[i]
-            &&nxt1[i]+1>len
-        ){
-            pos=i-nxt1[i];
-            len=nxt1[i]+1;
-        }
-    }
-    // 输出答案
-    if(len){inc(i,pos,pos+len-1)cout<<s[i];cout<<endl;}
-    else cout<<"Just a legend"<<endl;
+    string s1,s2;
+    cin>>s1>>s2;
+    vector<int> ans = stringUtil::kmp_pos(s1,s2);
+    for(int tmp:ans)cout<<tmp+1<<endl;
+    for(int tmp:stringUtil::nxt)cout<<tmp+1<<" ";cout<<endl;
 }
 signed main()
 {
@@ -117,3 +90,7 @@ signed main()
     while(_--)solve();
     return 0;
 }
+/*
+ABABABC
+ABA
+*/
